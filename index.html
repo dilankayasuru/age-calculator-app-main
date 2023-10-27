@@ -12,80 +12,58 @@
 
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style> -->
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="form-container">
-      <form>
-        <div class="input-fields">
-          <div id="day_input" class="day input-normal">
-            <label for="day">Day</label>
-            <input type="text" placeholder="DD" id="day" required>
-            <div class="error-result" id="errormessageDay"></div>
+  <div class="body-container">
+    <div class="wrapper">
+      <div class="form-container">
+        <form>
+          <div class="input-fields">
+            <div id="day_input" class="input-normal">
+              <label for="day">Day</label>
+              <input type="text" placeholder="DD" id="day" required>
+              <div class="error-result" id="errormessageDay"></div>
+            </div>
+
+            <div id="month_input" class="input-normal">
+              <label for="month">Month</label>
+              <input type="text" placeholder="MM" id="month" required>
+              <div class="error-result" id="errormessageMonth"></div>
+
+            </div>
+
+            <div id="year_input" class="input-normal">
+              <label for="year">Year</label>
+              <input type="text" placeholder="YYYY" id="year" required>
+              <div class="error-result" id="errormessageYear"></div>
+
+            </div>
           </div>
-
-          <div id="month_input" class="month input-normal">
-            <label for="month">Month</label>
-            <input type="text" placeholder="MM" id="month" required>
-            <div class="error-result" id="errormessageMonth"></div>
-
+          <div class="submit-area">
+            <div class="line"></div>
+            <div class="submitBtn" id="submitBtn">
+              <img src="assets/images/icon-arrow.svg" alt="Submit">
+            </div>
           </div>
-
-          <div id="year_input" class="year input-normal">
-            <label for="year">Year</label>
-            <input type="text" placeholder="YYYY" id="year" required>
-            <div class="error-result" id="errormessageYear"></div>
-
-          </div>
+        </form>
+        <div class="output-container">
+          <p><span id="outputYear">--</span> years</p>
+          <p><span id="outputMonth">--</span> months</p>
+          <p><span id="outputDay">--</span> days</p>
         </div>
-        <div class="submit-area">
-          <div class="line"></div>
-          <div class="submitBtn" id="submitBtn">
-            <img src="assets/images/icon-arrow.svg" alt="Submit">
-          </div>
-        </div>
-      </form>
-      <div class="output-container">
-        <p><span id="outputYear">--</span> years</p>
-        <p><span id="outputMonth">--</span> months</p>
-        <p><span id="outputDay">--</span> days</p>
       </div>
     </div>
   </div>
 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/dilankayasuru">Dilanka Yasuru</a>.
+  </div>
+
   <script src="index.js"></script>
-
-  <!-- Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-
 </body>
 
 </html>

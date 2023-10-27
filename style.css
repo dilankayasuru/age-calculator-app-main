@@ -31,12 +31,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.body-container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1em;
+}
+
 .wrapper {
     background: var(--White);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 3em;
     border-radius: 22px 22px 30% 22px;
 }
@@ -71,6 +75,7 @@ input[type=text] {
     border-radius: 7px;
     cursor: pointer;
     transition: all .2s ease;
+    width: 100%;
 }
 
 .input-normal input[type=text]:focus {
@@ -141,4 +146,38 @@ input[type=text] {
 #outputMonth,
 #outputDay {
     color: var(--Purple);
+}
+
+@media screen and (max-width: 880px) {
+    .wrapper {
+        padding: 3em 1.5em;
+    }
+
+    input[type=text] {
+        font-size: 18px;
+        padding: .5em 1em;
+    }
+
+    .input-fields {
+        max-width: none;
+    }
+
+    .submit-area {
+        padding: .5em 0 1.5em;
+        width: 100%;
+        position: relative;
+    }
+
+    .line {
+        position: absolute;
+    }
+
+    .submitBtn {
+        transform: scale(.75);
+    }
+
+    .output-container {
+        font-size: 3em;
+        line-height: 1em;
+    }
 }
